@@ -1,0 +1,93 @@
+@import '../App.scss'; 
+
+.item-card{
+    display: flex;
+    justify-content:flex-start;
+    background-color: white;
+    width:350px;
+    height:auto;
+    margin-bottom: 15px;
+    margin-right: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(109, 104, 104, 0.781);
+}
+.item-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.item-img{
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.item-info-container{
+    margin-left: 5px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .item-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .more-btn{
+        margin-right: 2px;
+        cursor: pointer;
+    }
+}
+
+.identify{
+    width:127px;
+    h3{
+        font-size: 24px;
+        margin: 0;
+        font-family: $secondary-font;
+        color: $accent;
+    }
+    p{
+        font-size:16px;
+        margin: 0;
+        font-family: $secondary-font;
+        font-weight: 600;    
+    }
+}
+
+.details{
+    width: 100%;
+    font-size:10px;
+    p{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    span{
+        margin-right: px;
+    }
+    .first-row{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0.2rem;
+    }
+    .location{
+        margin-left: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .item-card{
+        margin-right:20px;
+    }
+}
+@media screen and (max-width: 1160px){
+    .item-card{
+        margin-right:10px;
+    }
+}

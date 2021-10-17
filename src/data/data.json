@@ -1,0 +1,74 @@
+[
+    {
+      "registration": "4R-ANB",
+      "model": "Airbus A320neo",
+      "make": "Airbus",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    },
+    {
+      "registration": "G-BNLZ",
+      "model": "Boeing 747-436",
+      "make": "Boeing",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    },
+    {
+      "registration": "VT-CIH",
+      "model": "Airbus A320-251N",
+      "make": "Airbus",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    },
+    {
+      "registration": "A7-BAF",
+      "model": "Boeing 777-300ER",
+      "make": "Boeing",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    },
+    {
+      "registration": "B-KPN",
+      "model": "Boeing 777-367ER",
+      "make": "Boeing",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    },
+    {
+      "registration": "4R-ANB",
+      "model": "Airbus A320neo",
+      "make": "Airbus",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    },
+    {
+      "registration": "G-BNLZ",
+      "model": "Boeing 747-436",
+      "make": "Boeing",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    },
+    {
+      "registration": "VT-CIH",
+      "model": "Airbus A320-251N",
+      "make": "Airbus",
+      "date": "2021-07-01",
+      "time": "14:16",
+      "location": "Chennai",
+      "image": ""
+    }
+  ]

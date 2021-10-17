@@ -1,0 +1,58 @@
+@import "../App.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.logo {
+  width: 250px;
+}
+
+.app-btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  background-color: $accent;
+  padding: 0.3rem;
+  cursor: pointer;
+  color: white;
+  width: 160px;
+  height: 30px;
+  border-radius:5px;
+}
+
+.app-btn {
+  border: none;
+  outline: none;
+  background-color:transparent;
+  color: inherit;
+  font-family: $secondary-font;
+  font-weight: 500;
+}
+
+hr{
+    width: 80%;
+    margin-left:0;
+    background-color:$text-secondary;
+    border: none;
+    height: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    hr{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+  .header{
+    flex-direction: column;
+    align-items: space-between;
+    height: 100px;
+  }
+  hr{
+    width: 100%;
+}
+}

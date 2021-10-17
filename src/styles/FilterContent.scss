@@ -1,0 +1,20 @@
+@import '../App.scss';
+
+.filter-content{
+    background-color: $section-background;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    padding: 0.2rem  0.5rem 0.2rem;
+    h3{
+        font-family: $text-primary;
+        font-size: 15px;
+        color: $text-secondary;
+        text-transform: uppercase;
+    }
+    label{
+        text-transform: uppercase;
+    }
+}
