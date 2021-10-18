@@ -28,6 +28,7 @@ const FormModal = () => {
 
     const isEditing = appContext.isEditing;
     const editID = appContext.editID;
+    const editingItem = appContext.editingObject;
 
     //regEx for validity of registration
     const reg = /^[\w]{1,2}[\\-][\w]{1,5}$/;
@@ -141,10 +142,9 @@ Suffix should be between one and five characters`
         };
         //editing an item
         if (isEditing) {
-            console.log(registration);
             spotting = {
                 id: editID,
-                itemImage: imagePath,
+                itemImage: !imagePath ? editingItem.itemImage:imagePath,
                 registration: registration.toUpperCase(),
                 make,
                 model,

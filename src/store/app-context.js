@@ -128,11 +128,10 @@ export const AppContextProvider = (props) => {
 
     //function to trigger edit
     const editItem = (id) => {
-        const editingItem = appData.find(item => item.id === id);
+        const editingItem = allData.find(item => item.id === id);
         setIsEditing(true);
         setEditID(id);
         setEditingObject(editingItem);
-        console.log(editingItem);
     }
 
     const clearEdit = () => {
