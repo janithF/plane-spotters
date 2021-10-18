@@ -126,10 +126,10 @@ Suffix should be between one and five characters`
     }
 
     //function when clsoing form
-    const closeForm=()=>{
-        modalData.closeModal(); 
+    const closeForm = () => {
+        modalData.closeModal();
         appContext.clearEdit();
-        resetForm(); 
+        resetForm();
     }
 
     //Submitting the form
@@ -144,7 +144,7 @@ Suffix should be between one and five characters`
         if (isEditing) {
             spotting = {
                 id: editID,
-                itemImage: !imagePath ? editingItem.itemImage:imagePath,
+                itemImage: !imagePath ? editingItem.itemImage : imagePath,
                 registration: registration.toUpperCase(),
                 make,
                 model,
@@ -188,7 +188,7 @@ Suffix should be between one and five characters`
                     <form action="" id="newSpotting" onSubmit={submitHandler}>
                         {/* row 01 */}
                         <div className="row">
-                            <div className="form-group col-6">
+                            <div className="form-group col-sm-6">
                                 <label htmlFor="registration">Registration</label>
                                 <div className="row">
                                     <div className="col-10">
@@ -268,7 +268,7 @@ Suffix should be between one and five characters`
                         </div>
                         {/* row 04 */}
                         <div className="row">
-                            <div className="form-group col-8">
+                            <div className="form-group col-sm-8">
                                 <label htmlFor="location">Location</label>
                                 <div className="row">
                                     <div className="col-10">
@@ -291,9 +291,9 @@ Suffix should be between one and five characters`
                         </div>
                         {/* row 05 */}
                         <div className="row">
-                            <div className="form-group col-10">
+                            <div className="form-group col-sm-12">
                                 <div className="row">
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <div className="custom-file">
                                             <input type="file"
                                                 className="custom-file-input"
@@ -303,19 +303,21 @@ Suffix should be between one and five characters`
                                             />
                                             <label className="custom-file-label" htmlFor="customFile">Choose Image</label>
                                         </div>
+                                        <div className="row">
+                                            <div className="col-sm-12">
+                                                <p>{imageName}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="col-2">
+
+                                    <div className="col-sm-2">
                                         <button onClick={(e) => uploadFiles(e)} className="btn btn-sm btn-secondary">Upload</button>
                                     </div>
-                                    <div className="col-4">
+                                    <div className="col-sm-4">
                                         <p>{progress}% uploaded</p>
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="col-12">
-                                        <p>{imageName}</p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <button type="submit"
