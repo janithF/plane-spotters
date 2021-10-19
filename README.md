@@ -12,6 +12,9 @@ b) Form to add a new aircraft sighting.
 
 In the project directory, you can run:
 
+### To Install,
+use `npm install`
+
 ### To run the app,
 use `yarn start`
 
