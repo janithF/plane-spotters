@@ -8,9 +8,10 @@ import ModalContext from '../store/modal-context';
 import useInput from '../hooks/use-input';
 import AppContext from '../store/app-context';
 import useImage from '../hooks/use-image';
-import { createPortal } from 'react-dom';
+import { useHistory } from 'react-router-dom';
 
 const FormModal = () => {
+    const history = useHistory();
 
     //----[getting date and time]----
     const currentDate = new Date();
@@ -130,6 +131,7 @@ Suffix should be between one and five characters`
         modalData.closeModal();
         appContext.clearEdit();
         resetForm();
+        history.push('/home');
     }
 
     //Submitting the form
@@ -171,17 +173,18 @@ Suffix should be between one and five characters`
             appContext.addData(spotting);
         }
         resetForm();
+        history.push('/home');
     }
 
 
     //--------------------------------------[RETURN]---------------------------------------------
-    return createPortal(
+    return (
         <>
             {modalData.isModalOpen && <div className="overlay"></div>}
             <div className={`${modalData.isModalOpen ? 'modal show' : 'modal'}`}>
                 <div className="app-modal-content">
                     <header>
-                        <h2>Add new Spotting</h2>
+                        <h2>{appContext.isEditing ? "Edit the Spotting" : "Add New Spotting"}</h2>
                         <FaTimes onClick={closeForm} className="close-btn" />
                     </header>
                     <hr />
@@ -327,7 +330,7 @@ Suffix should be between one and five characters`
                     </form>
                 </div>
             </div>
-        </>, document.getElementById('modal-root')
+        </>
     );
 };
 

@@ -3,15 +3,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 import { AppContextProvider } from './store/app-context';
 import { ModalContextProvider } from './store/modal-context';
 
 ReactDOM.render(
   <React.StrictMode>
     <ModalContextProvider>
-        <AppContextProvider>
+      <AppContextProvider>
+        <BrowserRouter>
           <App />
-        </AppContextProvider>
+        </BrowserRouter>
+      </AppContextProvider>
     </ModalContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

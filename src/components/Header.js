@@ -15,12 +15,12 @@ function Header() {
         <>
             <div className="header">
                 <img src={logo} alt="logo" className="logo" />
-                {/* <Link to="Add-New"> */}
+                <Link to="/home/new-spotter">
                     <div className="app-btn-container" onClick={() => { modalData.openModal(); setIsEditing(false) }}>
                         <VscDiffAdded />
                         <button className="app-btn" >Submit Spotting</button>
                     </div>
-                {/* </Link> */}
+                </Link>
             </div>
             <hr />
         </>
