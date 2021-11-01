@@ -4,7 +4,7 @@
     display: flex;
     justify-content:flex-start;
     background-color: white;
-    width:350px;
+    width:360px;
     height:auto;
     margin-bottom: 15px;
     margin-right: 40px;
@@ -44,7 +44,7 @@
 }
 
 .identify{
-    width:127px;
+    width:137px;
     h3{
         font-size: 24px;
         margin: 0;
@@ -71,6 +71,7 @@
         margin-right: px;
     }
     .first-row{
+        width:80%;
         display: flex;
         justify-content:space-between;
         align-items: center;

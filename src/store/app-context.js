@@ -111,7 +111,6 @@ export const AppContextProvider = (props) => {
         } catch (error) {
             alert('something went wrong')
         }
-        appData.splice(id);
         getData();
     }
 
